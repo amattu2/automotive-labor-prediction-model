@@ -94,3 +94,6 @@ pip install flask flask_restful flask_cors pickle numpy
 ```bash
 PORT=5000 python3 src/app.py
 ```
+
+To make a prediction, open the URL in your browser and append the description. e.g.
+[http://localhost:5000/predict](http://localhost:5000/predict?description=oc,%20su,%2otires)
