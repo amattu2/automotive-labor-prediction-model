@@ -10,11 +10,11 @@ api = Api(app)
 
 class LinePredictor(Resource):
     def get(self):
-        if "description" in request.args:
+        if request.args.get("description") is None:
             return "Invalid request. Please use GET with \"description\" query parameter."
 
         try:
-            return prediction.predict_lines(request.json)
+            return prediction.predict_lines(request.args.get("description"))
         except Exception as e:
             return "Unknown error occurred. Please try again later."
 

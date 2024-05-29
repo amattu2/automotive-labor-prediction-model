@@ -69,11 +69,19 @@ metrics in addition to the overall training time:
 
 ## Prediction Example
 
-Description: `Replace engine oil and filter`
+Description: `oc, su, tires`
+
 Predicted line items:
 
-- tbd
-- tbd
+- change oil & filter
+- check & top off brake fluid as necessary
+- check & top off engine coolant as necessary
+- check & top off power steering fluid as necessary
+- check & top off transmission fluid as necessary
+- check & top off washer fluid
+- check tires & adjust tire pressure as necessary
+- courtesy inspection / general check-over
+- mount & comp. balance two new a/s tires
 
 # Deploying the API
 
@@ -84,5 +92,5 @@ pip install flask flask_restful flask_cors pickle numpy
 ```
 
 ```bash
-PORT=5000 python src/app.py
+PORT=5000 python3 src/app.py
 ```
